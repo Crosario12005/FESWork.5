@@ -11,7 +11,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6, span {
-  color: #242424;
+  color: #bb1717;
   text-align: center;
   line-height: 1.25;
 }
@@ -79,8 +79,8 @@ li {
   padding: 0 12px;
 }
 
-.text--purple {
-  color: #6030b1;
+.text--red {
+  color: #f10808;
 }
 
 section:nth-child(even) {
@@ -115,7 +115,7 @@ nav {
 }
 
 .nav__link--anchor-primary {
-  background-color: #6030b1;
+  background-color: #290070;
   padding: 8px 20px;
   border-radius: 50px;
   color: white;
@@ -123,7 +123,7 @@ nav {
 }
 
 .nav__link--anchor-primary:hover {
-  background-color: #5d3eff;
+  background-color: #1e1646;
 }
 
 .personal__logo {
