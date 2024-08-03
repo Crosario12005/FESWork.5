@@ -15,6 +15,43 @@ h1, h2, h3, h4, h5, h6, span {
   text-align: center;
   line-height: 1.25;
 }
+ body {
+    background: rgb(0, 0, 0);
+}
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.781) 20%, transparent 20%) center/1500% 1500% no-repeat;
+    animation: stars 100s linear infinite;
+}
+
+@keyframes stars {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 30% 100%;
+    }
+}
+
+.star {
+    position: absolute;
+    border-radius: 100%;
+    background: rgba(198, 178, 178, 0.532);
+    opacity: 1;
+    animation: twinkle .5s infinite alternate;
+    transition: transform 0.2s ease-in-out;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 h1 {
   font-size: 36px;
@@ -49,7 +86,7 @@ i:hover {
   background-color: #fff;
 }
 .link__hover-effect--black:after {
-  background-color: #000;
+  background-color: #f3efef;
 }
 
 .link__hover-effect:hover:after {
@@ -82,9 +119,11 @@ li {
 .text--red {
   color: #f10808;
 }
-
+.green{
+  color: rgb(255, 0, 0);
+}
 section:nth-child(even) {
-  background-color: #f8f8f8;
+  background-color: #0909096e;
 }
 
 .section__title {
@@ -160,7 +199,7 @@ nav {
   height: 75px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 8px 16px rgba(220, 58, 58, 0.833);
   margin-bottom: 36px;
   animation: animate-profile-picture 800ms 200ms backwards;
 }
@@ -197,7 +236,7 @@ nav {
 
 .about-me__link {
   font-size: 20px;
-  color: #242424;
+  color: #ffeeee;
   padding: 0 16px;
 }
 
@@ -497,4 +536,6 @@ footer {
     text-align: center;
     margin: 12px 0;
   }
+ 
+
 }
