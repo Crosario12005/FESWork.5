@@ -1,0 +1,22 @@
+*{
+    paddinG:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+nav{
+    height: 80px;
+    display: flex;
+}
+.nav_container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style-type: none;
+}
